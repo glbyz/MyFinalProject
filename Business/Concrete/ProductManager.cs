@@ -49,10 +49,7 @@ namespace Business.Concrete
 
         public IDataResult<List<Product>> GetAll()
         {
-            //iş kodları
-            //yetkisi var mı 
-            //erişiliyor mu 
-            //if blokları
+           
             if (DateTime.Now.Hour == 23)
             {
                 return new ErrorDataResult<List<Product>>(Messages.MaintenanceTime);

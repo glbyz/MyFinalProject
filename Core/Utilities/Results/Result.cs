@@ -8,10 +8,9 @@ namespace Core.Utilities.Results
     {
        
 
-        public Result(bool success , string message):this(success)//success ve message birlikte çalışması için
+        public Result(bool success , string message):this(success)
         {
             Message = message;
-            //Success = success; siliyoruz gereksiz altta success ctor var
         }
 
         public Result(bool success)

@@ -30,11 +30,7 @@ namespace WebAPI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            //services.AddSingleton<IProductService,ProductManager>();//derste eklendi postmanle alakalý deðil
-            //services.AddSingleton<IProductDal, EfProductDal>();// derste eklendi postmanle alakalý deðil
-            //services.AddCors();
-            //services.AddAuthentication();
-            //services.AddAuthorization(); 
+           
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

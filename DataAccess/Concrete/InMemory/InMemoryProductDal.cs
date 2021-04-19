@@ -11,7 +11,7 @@ namespace DataAccess.Concrete.InMemory
 {
     public class InMemoryProductDal : IProductDal
     {
-        List<Product> _products;//global alanı classıni metodların dışında classın içinde oldugu için
+        List<Product> _products;
         
         public InMemoryProductDal()
         {
@@ -66,7 +66,6 @@ namespace DataAccess.Concrete.InMemory
 
         public void Update(Product product)
         {
-            //gönderdiğim ürün idsine sahip olan listedeki ürünü bul
             Product productToUpdate = _products.SingleOrDefault(p => p.ProductId == product.ProductId);
             productToUpdate.ProductName = product.ProductName;
             productToUpdate.CategoryId = product.CategoryId;
